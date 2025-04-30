@@ -10,7 +10,7 @@
 | Storage    | 500GB / 1TB NVMe SSD          |
 | Bandwidth  | 100 MBps for Download/Upload  |
 
-- Guide's current binary version: `v1.0.0`S
+- Guide's current binary version: `v1.0.0`
 
 
 ### 1. Install Dependencies for Building from Source
@@ -103,11 +103,6 @@ read -p "Enter your private key: " PRIVATE_KEY && echo "private key: $PRIVATE_KE
 ```
 
 ### 8. Update Node Configuration
-
-**Standard Contract**
-```bash
-rm -rf $HOME/0g-storage-node/run/config-testnet.toml && cp $HOME/0g-storage-node/run/config-testnet-standard.toml $HOME/0g-storage-node/run/config-testnet.toml
-```
 
 **Turbo Contract (Default)**
 ```bash
