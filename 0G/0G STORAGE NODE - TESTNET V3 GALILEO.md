@@ -1,5 +1,18 @@
 # SET UP 0G STORAGE NODE - TESTNET V3 GALILEO GUIDE
 
+
+## System Requirements
+
+| Category   | Requirements                   |
+| ---------- | ----------------------------- |
+| CPU        | 8+ cores                      |
+| RAM        | 32+ GB                        |
+| Storage    | 500GB / 1TB NVMe SSD          |
+| Bandwidth  | 100 MBps for Download/Upload  |
+
+- Guide's current binary version: `v1.0.0`S
+
+
 ### 1. Install Dependencies for Building from Source
 
 ```bash
