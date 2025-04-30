@@ -155,13 +155,19 @@ sudo systemctl restart zgs && \
 sudo systemctl status zgs
 ```
 
-### 11. Show Logs by Date
-
+### 11. Check log
+- Show detail log:
 ```bash
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 ```
 
-You also can checj logSync & Peers through RPC:
+- You also can checj logSync & Peers through RPC:
+
+  Install jq first:
+```
+sudo apt install jq
+```
+
 ```
 while true; do
     response=$(curl -s -X POST http://localhost:5678 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"zgs_getStatus","params":[],"id":1}')
